@@ -1,3 +1,13 @@
-print("RTFM (Read)")
-print("RTFM (Read)1 2 3")
-print("RTFM (Read)"
+import sys
+
+def main():
+    params = sys.argv[1:]
+    if len(params) < 2:
+        print("none")
+    else:
+        # แสดงพารามิเตอร์ย้อนกลับทีละบรรทัด
+        for param in reversed(params):
+            print(param)
+
+if __name__ == "__main__":
+    main()
